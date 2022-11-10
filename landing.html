@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kushagra's Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <!--jQuery from bootstrap-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+
+    <!-- jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Language bar stylesheet -->
+    <link rel="stylesheet" href="css/langBar.css" />
+
+    <!-- rating bar stylesheet -->
+    <link rel="stylesheet" href="css/ratingBar.css" />
+
+    <!-- skill bar stylesheet -->
+    <link rel="stylesheet" href="css/skillBar.css" />
+
+    <!-- circular rating bar -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+
+  </head>
+
+  <!-- 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+-->
+
+  <body id="body">
+    <main class="wrapper">
+      <div class="card_wrapper">
+        <div class="card">
+          <div class="upper-card">
+            <img src="./images/linkedinImage.png" class="profile-image" />
+            <div class="upper-card-info">
+              <h1 class="card-fullname">Kushagra Sharma</h1>
+              <h5 class="card-designation">Software Developer</h5>
+              <div class="card-socials">
+                <!-- ICONS COME HERE -->
+                <img class="card-icon" onclick="handleSocialClick('blog')" src="/images/blogger.png" />
+                <img class="card-icon" onclick="handleSocialClick('linkedin')" src="/images/linkedin.png" />
+                <img class="card-icon" onclick="handleSocialClick('github')" src="/images/github.png" />
+              </div>
+            </div>
+          </div>
+          <div class="lower-card">
+            <button class="download-cv-button">DOWNLOAD CV</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="details_wrapper">
+        <div class="details-introduction">
+          <h1 class="details-greeting">Hello it's Kushagra!</h1>
+
+          I'm an aspiring Full stack web developer who loves creating frontend components and backend, be it ideas from different industries or people from different backgrounds and teams. I have strong technical skills, particularly in databases and frontend development, and an academic background in mathematics and coding.
+
+          I love solving business problems with unique algorithms and communicating complex ideas to business stakeholders.
+
+          <button id="share-btn" onclick="handleLinkCopyToClipBoard()" class="share-with-button">
+            Share
+          </button>
+        </div>
+
+        <div class="details-brief">
+          <!-- <h1 class="">Hello it's Kushagra!</h1> -->
+
+          <!-- <button class="share-with-button"><img class="share-icon" src="/images/share.png" />Share</button> -->
+
+          <div class="details-brief-lv1">
+            <div class="details-brief-lv1-personal">
+              <h2 class="details-lv1-head-personal">Personal Information</h2>
+              <br />
+              <br />
+              <div class="personal-data">
+                <div class="personal-data-li">
+                  <h4 class="personal-li-fullname"><b>Fullname</b></h4>
+                  <h4 class="personal-fullname-data">Kushagra Sharma</h4>
+                </div>
+                <div class="personal-data-li">
+                  <h4 class="personal-li-fullname"><b>D.O.B</b></h4>
+                  <h4 class="personal-fullname-data">25th November 1999</h4>
+                </div>
+                <div class="personal-data-li">
+                  <h4 class="personal-li-fullname"><b>Email</b></h4>
+                  <h4 class="personal-fullname-data">quasarkid123@gmail.com</h4>
+                </div>
+                <div class="personal-data-li">
+                  <h4 class="personal-li-fullname"><b>Phone</b></h4>
+                  <h4 class="personal-fullname-data">7876211465</h4>
+                </div>
+                <div class="personal-data-li">
+                  <h4 class="personal-li-fullname"><b>Address</b></h4>
+                  <h4 class="personal-fullname-data">
+                    NSUT campus, Sec-3, Dwarka, ND
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-brief-lv1-languages">
+              <h2 class="details-lv1-head-personal">Languages</h2>
+              <br />
+              <!-- <br> -->
+              <div class="skills">
+                <div class="skill">
+                  <div class="skill-title">English</div>
+                  <div class="skill-bar" data-bar="90">
+                    <span class="skill-bar-percent"></span>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-title">Hindi</div>
+                  <div class="skill-bar" data-bar="90">
+                    <span class="skill-bar-percent"></span>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-title">French</div>
+                  <div class="skill-bar" data-bar="40">
+                    <span class="skill-bar-percent"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="details-brief-lv2">
+            <div class="container container-lft">
+              <h2 class="details-lv2-head-personal">Technical Skills</h1>
+                <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
+                    <div class="progress-circle p65">
+                        <span><img src="images/html.png" alt="_html" /></span>
+                        <div class="left-half-clipper">
+                          <div class="over50"></div>
+                          <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <div class="progress-circle p65">
+                        <span><img src="images/js.png" alt="_html" /></span>
+                        <div class="left-half-clipper">
+                          <div class="first50-bar"></div>
+                          <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <div class="progress-circle p65">
+                        <span><img src="images/sass.png" alt="_html" /></span>
+                        <div class="left-half-clipper">
+                          <div class="first50-bar"></div>
+                          <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <div class="progress-circle p65">
+                        <span><img src="images/nodejs.png" alt="_html" /></span>
+                        <div class="left-half-clipper">
+                          <div class="first50-bar"></div>
+                          <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <div class="progress-circle p65">
+                        <span><img src="images/react.png" alt="_html" /></span>
+                        <div class="left-half-clipper">
+                          <div class="first50-bar"></div>
+                          <div class="value-bar"></div>
+                        </div>
+                    </div>
+                    <div class="progress-circle p65">
+                        <span><img src="images/android.png" alt="_html" /></span>
+                        <div class="left-half-clipper">
+                          <div class="first50-bar"></div>
+                          <div class="value-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-ryt">
+              <h2 class="details-lv2-head-personal">Soft Skills</h1>
+              <div class="Lead bar learning" data-skill="Leadership"></div>
+              <div class="Comm bar back basic" data-skill="Communication"></div>
+              <div class="Team bar back intermediate" data-skill="Teamwork"></div>
+              <div class="Timee bar front advanced" data-skill="Time management"></div>
+              <div class="CT bar front expert" data-skill="Critical thinking"></div>
+              <div class="ORG bar front expert" data-skill="Organizational"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script defer type="text/javascript" src="main.js"></script>
+</html>

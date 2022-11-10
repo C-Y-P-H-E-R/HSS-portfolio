@@ -1,0 +1,23 @@
+:root {
+    --athensGrey: #efeff0;
+    --ziggurat: #bedce3;
+    --hippieBlue: #5392ac;
+    --whiteLinen: #f9f4ed;
+    --spindle: #bcd7e9;
+    --regentStBlue: #94c4e0;
+}
+
+
+/* 
+
+    colors list 
+
+    athens-grey: var(--athensGrey)
+    ziggurat: var(--ziggurat)
+    hippie blue: var(--hippieBlue)
+    white linen: var(--whiteLinen)
+    spindle: var(--spindle)
+    regent st Blue: var(--regentStBlue) 
+
+
+*/

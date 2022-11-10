@@ -1,0 +1,66 @@
+.skills,
+.skills .skill,
+.skills .skill .skill-title,
+.skills .skill .skill-bar {
+   width: 100%;
+   float: left;
+   font-family: barlow-regular;
+}
+
+.skills {
+   padding:15px;
+}
+
+.skills .skill {
+   margin-bottom: 30px;
+}
+
+.skills .skill .skill-title {
+   font-family: barlow-semibold;
+   margin-bottom: 10px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.skills .skill .skill-bar {
+   width: 0;
+   height: 6px;
+   background: #f0f0f0;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills.active .skill .skill-bar {
+   width: 100%;
+}
+
+.skills .skill .skill-bar span {
+   float: left;
+   width: 0%;
+   background: var(--hippieBlue);
+   height: 6px;
+   position: relative;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills .skill .skill-bar span b {
+   float: left;
+   width: 100%;
+   position: relative;
+   text-align: right;
+   opacity: 0;
+   font-size: 12px;
+   color: var(--hippieBlue);
+   font-weight: 400;
+   top: -18px;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,900&subset=latin,latin-ext); */
+
+/* html,body{
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+} */

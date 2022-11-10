@@ -1,0 +1,85 @@
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: var(--ziggurat);
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: rgb(114, 114, 114);
+  font-family: barlow-semibold;
+  /* text-shadow: 1px 1px 1px rgba(0,0,0,0.5) */
+  /* border: none; */
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: var(--whiteLinen);
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: var(--whiteLinen);
+}
+.bar.back::before{
+  background-color: var(--whiteLinen);
+}
+
+.FD::before{
+  width: calc(70% - 10px);
+}
+.BD::before{
+  width: calc(50% - 10px);
+}
+.DB::before{
+  width: calc(40% - 10px);
+}
+.CN::before{
+  width: calc(50% - 10px);
+}
+.OOPS::before{
+  width: calc(70% - 10px);
+}
+
+.Lead::before{
+  width: calc(70% - 10px);
+}
+.Comm::before{
+  width: calc(50% - 10px);
+}
+.Team::before{
+  width: calc(40% - 10px);
+}
+.Timee::before{
+  width: calc(50% - 10px);
+}
+.CT::before{
+  width: calc(70% - 10px);
+}
+.ORG::before{
+  width: calc(70% - 10px);
+}
