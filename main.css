@@ -29,21 +29,28 @@ body {
 .wrapper {
     font-family: barlow-regular;
     display: flex;
+
     /* background-color: aqua; */
 }
 
 .card_wrapper {
-    flex: 1;
+    /* flex: 1;
+     */
+    width: 25%;
     margin: 0.6rem;
     /* border: 1px solid #aaa; */
     height: fit-content;
     box-shadow:  -20px 20px 60px #bebebe,
              20px -20px 60px #ffffff;
+    position: sticky;
+    top: 0.5rem;
     /* background-color: aquamarine; */
 }
 
 .details_wrapper {
-    flex: 3;
+    /* flex: 3;
+     */
+     width: 70%;
     /* background-color: brown; */
     /* background-color: white; */
     margin: 0.6rem;
@@ -62,7 +69,7 @@ body {
 }
 
 .profile-image {
-    width: 225px;
+    width: 80%;
     margin: auto;
     object-fit: contain;
     border-radius: 50%;
@@ -98,7 +105,7 @@ body {
 
 .card-icon:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .lower-card {
@@ -113,11 +120,20 @@ body {
 
 .download-cv-button {
     padding: 0.8rem 1rem;
-    font-size: 0.9rem;
+    /* width: 90%;
+     */
+    font-size: 80%;
     background-color: var(--hippieBlue);
     border: none;
     border-radius: 10px;
     color: white;
+    transition: 200ms all ease-in-out;
+
+}
+
+.download-cv-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .details-introduction {
@@ -125,6 +141,7 @@ body {
     flex-direction: column;
     margin-bottom: 1rem;
     padding: 4rem;
+    /* text-align: justify; */
     /* border: 1px solid rgb(196, 194, 194); */
     border-radius: 2px;
     background-color: white;
@@ -261,4 +278,173 @@ body {
     padding-left: 2em;
 }
 
+.skill_subhead {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
+.badge {
+    padding: 10px;
+}
+
+.skill_wrapper {
+    display: flex;
+}
+
+.techskill_wrapper_wrapper {
+    flex: 1;
+}
+
+.softskill_wrapper_wrapper {
+    flex: 1;
+}
+
+.badge-primary {
+    background-color: var(--hippieBlue);
+}
+
+
+
+.card-btns {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    padding-bottom: 0.4rem;
+}
+
+.btn {
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--hippieBlue);
+    /* border: none; */
+}
+
+.btn-primary:hover {
+    background-color: var(--hippieBlue);
+    border-color: var(--hippieBlue);
+}
+
+.btn:focus {
+    outline: none !important;
+    background-color: var(--hippieBlue);
+    box-shadow: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1500px) {
+    .details-brief-lv1 {
+        flex-direction: column;
+    }
+
+    .details-brief-lv1-languages {
+        margin-top: 2rem;
+    }
+
+    .skill_wrapper {
+        flex-direction: column;
+    }
+
+    .softskill_wrapper_wrapper {
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        padding: 1rem 10rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_wrapper {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .details_wrapper {
+        width: 100%;
+    }
+
+    .details-brief-lv1 {
+        flex-direction: column;
+    }
+
+    .details-brief-lv1-languages {
+        margin-top: 2rem;
+    }
+
+    .skill_wrapper {
+        flex-direction: column;
+    }
+
+    .softskill_wrapper_wrapper {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 1rem 0rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_wrapper {
+        position: relative;
+        width: 95%;
+        box-shadow: none;
+    }
+
+    .details_wrapper {
+        width: 95%;
+        
+    }
+
+    .details-introduction {
+        box-shadow: none;
+        border: 1px solid rgba(0,0,0,.125);
+    }
+
+    .details-brief {
+        box-shadow: none;
+        border: 1px solid rgba(0,0,0,.125);
+    }
+
+    .details-brief-lv1 {
+        flex-direction: column;
+    }
+
+    .details-brief-lv1-languages {
+        margin-top: 2rem;
+    }
+
+    .skill_wrapper {
+        flex-direction: column;
+    }
+
+    .softskill_wrapper_wrapper {
+        margin-top: 2rem;
+    }
+    .personal-li-fullname  {
+        font-size: 80%;
+    }
+    .personal-fullname-data  {
+        font-size: 80%;
+        text-align: end;
+    }
+
+    .personal-data {
+        padding-right: 0rem;
+    }
+}
