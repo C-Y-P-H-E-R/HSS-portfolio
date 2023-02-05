@@ -48,7 +48,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       <div class="card_wrapper">
         <div class="card">
           <div class="upper-card">
-            <img src="./images/linkedinImage.png" class="profile-image" />
+            <img src="./images/my_pic.png" class="profile-image" />
             <div class="upper-card-info">
               <h1 class="card-fullname">Kushagra Sharma</h1>
               <h5 class="card-designation">Software Developer</h5>
@@ -61,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             </div>
           </div>
           <div class="lower-card">
-            <button class="download-cv-button">DOWNLOAD CV</button>
+            <a href="./docs/kush_resume_jan2023.pdf" download=""><button id="download-cv-button" class="download-cv-button">DOWNLOAD CV</button></a>
           </div>
         </div>
       </div>
@@ -146,62 +146,70 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
           <div class="details-brief-lv2">
             <div class="container container-lft">
-              <h2 class="details-lv2-head-personal">Technical Skills</h1>
-                <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
-                    <div class="progress-circle p65">
-                        <span><img src="images/html.png" alt="_html" /></span>
-                        <div class="left-half-clipper">
-                          <div class="over50"></div>
-                          <div class="value-bar"></div>
-                        </div>
-                    </div>
-                    <div class="progress-circle p65">
-                        <span><img src="images/js.png" alt="_html" /></span>
-                        <div class="left-half-clipper">
-                          <div class="first50-bar"></div>
-                          <div class="value-bar"></div>
-                        </div>
-                    </div>
-                    <div class="progress-circle p65">
-                        <span><img src="images/sass.png" alt="_html" /></span>
-                        <div class="left-half-clipper">
-                          <div class="first50-bar"></div>
-                          <div class="value-bar"></div>
-                        </div>
-                    </div>
-                    <div class="progress-circle p65">
-                        <span><img src="images/nodejs.png" alt="_html" /></span>
-                        <div class="left-half-clipper">
-                          <div class="first50-bar"></div>
-                          <div class="value-bar"></div>
-                        </div>
-                    </div>
-                    <div class="progress-circle p65">
-                        <span><img src="images/react.png" alt="_html" /></span>
-                        <div class="left-half-clipper">
-                          <div class="first50-bar"></div>
-                          <div class="value-bar"></div>
-                        </div>
-                    </div>
-                    <div class="progress-circle p65">
-                        <span><img src="images/android.png" alt="_html" /></span>
-                        <div class="left-half-clipper">
-                          <div class="first50-bar"></div>
-                          <div class="value-bar"></div>
-                        </div>
-                    </div>
+              <h2 class="details-lv2-head-personal">Skills</h2>
+              <div class="skill_wrapper">
+                <div class="techskill_wrapper_wrapper">
+                  <h5 class="skill_subhead">Technical</h5>
+                  <div class="techskill_wrapper">
+                    <span class="m-1 badge badge-primary">HTML</span>
+                    <span class="m-1 badge badge-primary">CSS</span>
+                    <span class="m-1 badge badge-primary">Javascript</span>
+                    <span class="m-1 badge badge-primary">React</span>
+                    <span class="m-1 badge badge-primary">Node</span>
+                    <span class="m-1 badge badge-primary">Sass</span>
+                    <span class="m-1 badge badge-primary">Git</span>
+                    <span class="m-1 badge badge-primary">Redux</span>
+                    <span class="m-1 badge badge-primary">Thunk</span>
+                    <span class="m-1 badge badge-primary">Context API</span>
+                    <span class="m-1 badge badge-primary">MongoDB</span>
+                  </div>
                 </div>
-            </div>
-            <div class="container container-ryt">
-              <h2 class="details-lv2-head-personal">Soft Skills</h1>
-              <div class="Lead bar learning" data-skill="Leadership"></div>
-              <div class="Comm bar back basic" data-skill="Communication"></div>
-              <div class="Team bar back intermediate" data-skill="Teamwork"></div>
-              <div class="Timee bar front advanced" data-skill="Time management"></div>
-              <div class="CT bar front expert" data-skill="Critical thinking"></div>
-              <div class="ORG bar front expert" data-skill="Organizational"></div>
+                <div class="softskill_wrapper_wrapper">
+                  <h5 class="skill_subhead">Soft</h5>
+                  <div class="softskill_wrapper">
+                    <span class="m-1 badge badge-primary">Time Management</span>
+                    <span class="m-1 badge badge-primary">Leadership</span>
+                    <span class="m-1 badge badge-primary">Perseverence</span>
+                    <span class="m-1 badge badge-primary">Discipline</span>
+                    <span class="m-1 badge badge-primary">Problem solving</span>
+                    <span class="m-1 badge badge-primary">Documentation</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+
+          <div class="details-brief-lv3">
+            <div class="container container-lft">
+              <h2 class="details-lv2-head-personal">Projects</h2>
+              <div class="allcards"> 
+                
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top proj-card-img" src="./images/netflixApp.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Netflix Website clone. <br>
+                      users can watch movie trailers by clicking movie thumbnails.</p>
+                  </div>
+                  <div class="card-btns">
+                    <button type="button" class="btn btn-primary" onclick="window.open(`https://github.com/C-Y-P-H-E-R/netflix-clone`)" >Code</button>
+                    <button type="button" class="btn btn-primary" onclick="window.open(`https://neflix-clone.netlify.app/`)">Demo</button>
+                  </div>
+                </div>
+                
+                <!-- <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div> -->
+              
+              </div>
+            </div>
+          </div>
+
+          
+
         </div>
       </div>
     </main>

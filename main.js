@@ -36,3 +36,5 @@ $(".skills .skill .skill-bar span").each(function() {
 setTimeout(function() {
    $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
 }, 2000);
+
+
